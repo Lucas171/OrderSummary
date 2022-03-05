@@ -1,5 +1,117 @@
+/* colors 
+Primary
+Pale blue: hsl(225, 100%, 94%)
+Bright blue: hsl(245, 75%, 52%)
+Neutral
+Very pale blue: hsl(225, 100%, 98%)
+Desaturated blue: hsl(224, 23%, 55%)
+Dark blue: hsl(223, 47%, 23%)
+
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.order-sum-box {
+  min-width: 37rem;
+  max-width: 40rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-size: contain;
+  margin-top: 8rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+img.main-img {
+  width: 100%;
+  height: 100%;
+}
+
+.order-sum-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.order-sum-details-header {
+  color: hsl(223, 47%, 23%);
+}
+
+.order-sum-details-text {
+  color: hsl(224, 23%, 55%);
+  letter-spacing: 0.08rem;
+  font-weight: 500;
+}
+
+.order-sum-plan-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 1.2rem 1.8rem;
+  border-radius: 10px;
+  text-align: left;
+  margin-top: 1.2rem;
+}
+.order-sum-plan-price {
+  line-height: 2.4rem;
+}
+
+.plan-header {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.plan-text {
+  color: hsl(224, 23%, 55%);
+}
+.order-sum-plan-price {
+  grid-column: 2/4;
+}
+
+.order-sum-box-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.order-sum-box-btns button {
+  font-family: "Red Hat Display", sans-serif;
+
+  padding: 1.4rem 9.8rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.order-sum-box-btns button:first-child {
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  box-shadow: 2px 1rem 3rem 0px rgba(56, 41, 224, 0.3);
+  font-weight: 700;
+}
+
+.order-sum-box-btns button:not(:first-child) {
+  color: hsl(224, 23%, 55%);
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: 700;
 }
